@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="nearHostelpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="697.0" style="-fx-background-color: #28252e; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+      <AnchorPane fx:id="findhostelpane" layoutX="23.0" prefHeight="405.0" prefWidth="651.0" style="-fx-background-color: #28252e;">
+         <children>
+            <AnchorPane layoutX="181.0" layoutY="172.0" prefHeight="190.0" prefWidth="287.0" style="-fx-background-color: #f2f0f0;">
+               <children>
+                  <ImageView fitHeight="209.0" fitWidth="239.0" layoutX="67.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@findhostel.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="52.0" layoutY="122.0" prefHeight="43.0" prefWidth="188.0" text="Find Near Hostel:" textAlignment="JUSTIFY" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="type_nearlocation" layoutX="240.0" layoutY="127.0" prefHeight="34.0" prefWidth="217.0" promptText="Enter Location" />
+            <Button fx:id="btn_Searchhostel" alignment="CENTER" layoutX="476.0" layoutY="131.0" mnemonicParsing="false" onAction="#showHostels" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #0fea88;" text="Search" />
+            <Label alignment="CENTER" layoutY="26.0" prefHeight="43.0" prefWidth="570.0" text="If you had already room booked, See your booking detail." textAlignment="JUSTIFY" textFill="#d46d35">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_checkdetail" alignment="CENTER" layoutX="467.0" layoutY="69.0" mnemonicParsing="false" onAction="#checkdetail" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #0fea88;" text="Check detail" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="122.0" prefHeight="43.0" prefWidth="49.0" text="Else" textAlignment="JUSTIFY" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="hosteldetailpane" layoutY="6.0" prefHeight="399.0" prefWidth="693.0" visible="false">
+         <children>
+                  <Label layoutX="21.0" layoutY="118.0" prefHeight="34.0" prefWidth="87.0" text="Address:" textFill="#0fea88">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="set_hosteladdress" layoutX="121.0" layoutY="124.0" prefHeight="22.0" prefWidth="227.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="257.0" prefHeight="26.0" prefWidth="149.0" text="Manager Name:" textFill="#0fea88">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="set_managername" layoutX="173.0" layoutY="259.0" prefHeight="22.0" prefWidth="173.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="293.0" prefHeight="26.0" prefWidth="173.0" text="Manager Contact:" textFill="#0fea88">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="150.0" prefHeight="34.0" prefWidth="126.0" text="Hostel Type:" textFill="#0fea88">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="set_hosteltype" layoutX="147.0" layoutY="156.0" prefHeight="22.0" prefWidth="199.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+            <AnchorPane layoutY="-9.0" prefHeight="69.0" prefWidth="697.0" style="-fx-border-color: #d8d988; -fx-border-width: 3;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="126.0" layoutY="16.0" prefHeight="33.0" prefWidth="399.0" text="Hostel Detail" textFill="#d8d988">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="21.0" layoutY="92.0" prefHeight="26.0" prefWidth="141.0" text="Hostel Name:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="set_hostelname" layoutX="162.0" layoutY="94.0" prefHeight="22.0" prefWidth="188.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="187.0" prefHeight="26.0" prefWidth="146.0" text="Total Rooms:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="220.0" prefHeight="26.0" prefWidth="146.0" text="Vacant Rooms:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="327.0" prefHeight="26.0" prefWidth="146.0" text="Establish Date:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="set_establishdate" layoutX="165.0" layoutY="329.0" prefHeight="22.0" prefWidth="199.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="set_totalroom" layoutX="156.0" layoutY="189.0" prefHeight="22.0" prefWidth="200.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="set_vacantrooms" layoutX="173.0" layoutY="222.0" prefHeight="22.0" prefWidth="173.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="set_managercontact" layoutX="194.0" layoutY="295.0" prefHeight="22.0" prefWidth="173.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_hosteldetailBack" layoutX="34.0" layoutY="359.0" mnemonicParsing="false" onAction="#hosteldetailBack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #0fea88;" text="Back" />
+            <Label layoutX="356.0" layoutY="246.0" prefHeight="26.0" prefWidth="303.0" text="Do you want to reserve seat?" textFill="#e8cb10">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_reserveseat" layoutX="571.0" layoutY="282.0" mnemonicParsing="false" onAction="#reserveseat" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #0fea88;" text="Yes" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="281.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@building.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="136.0" fitWidth="199.0" layoutX="495.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@roompic.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bookingpane" layoutY="3.0" prefHeight="406.0" prefWidth="704.0" style="-fx-border-color: #0fea88; -fx-border-width: 2;" visible="false">
+         <children>
+            <Label layoutX="27.0" layoutY="75.0" prefHeight="43.0" prefWidth="341.0" text="Your already Booked Seats are:" textAlignment="JUSTIFY" textFill="#c7785b" underline="true">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="250.0" prefHeight="34.0" prefWidth="135.0" text="Floor Number:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="293.0" prefHeight="26.0" prefWidth="135.0" text="Bed Number:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="169.0" prefHeight="33.0" prefWidth="156.0" text="Room  Number:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="210.0" prefHeight="33.0" prefWidth="135.0" text="Room Type:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="125.0" prefHeight="34.0" prefWidth="135.0" text="Hostel Name:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="334.0" prefHeight="34.0" prefWidth="135.0" text="Payment:" textFill="#0fea88">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="booking_hostelname" layoutX="173.0" layoutY="134.0" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="booking_roomnumber" layoutX="179.0" layoutY="179.0" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="booking_roomtype" layoutX="150.0" layoutY="217.0" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="booking_floorno" layoutX="164.0" layoutY="257.0" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="booking_bedno" layoutX="157.0" layoutY="297.0" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="booking_payment" layoutX="125.0" layoutY="341.0" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="245.0" fitWidth="353.0" layoutX="337.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bookhostel.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="2.0" prefHeight="69.0" prefWidth="697.0" style="-fx-border-width: 3; -fx-border-color: #0fea88;">
+               <children>
+                  <Label alignment="CENTER" layoutX="154.0" layoutY="13.0" prefHeight="43.0" prefWidth="341.0" text="Booking Record" textAlignment="JUSTIFY" textFill="#d1e810">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btn_back" layoutX="587.0" layoutY="338.0" mnemonicParsing="false" onAction="#backfun" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #0fea88;" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
