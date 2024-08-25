@@ -18,3 +18,4 @@ Includes a configurable persistence handler to store data in either files or a D
 Design Patterns
 
 Utilizes design patterns like Singleton, Factory, and DAO to ensure maintainability and scalability.
+[Description of HMS.docx](https://github.com/user-attachments/files/16740355/Description.of.HMS.docx)
